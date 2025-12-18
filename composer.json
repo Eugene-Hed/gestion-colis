@@ -1,0 +1,14 @@
+{
+  "name": "colis/gestion",
+  "description": "Plateforme légère de gestion d'expédition et retrait de colis",
+  "type": "project",
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "phpmailer/phpmailer": "^6.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Colis\\\\": "src/"
+    }
+  }
+}

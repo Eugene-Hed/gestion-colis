@@ -26,13 +26,13 @@
       <!-- Enregistrement -->
       <div class="flex gap-4">
         <div class="flex flex-col items-center">
-          <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-xl font-bold text-blue-600">
+          <div class="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-xl font-bold text-slate-600">
             ✓
           </div>
-          <div class="w-1 h-16 bg-blue-200 my-2"></div>
+          <div class="w-1 h-16 bg-slate-200 my-2"></div>
         </div>
         <div class="pt-2">
-          <h4 class="font-semibold text-blue-900">Enregistré</h4>
+          <h4 class="font-semibold text-slate-900">Enregistré</h4>
           <p class="text-gray-600 text-sm">
             <?= date('d M Y à H:i', strtotime($s['created_at'] ?? 'now')) ?>
           </p>
@@ -42,15 +42,15 @@
       <!-- Arrivée -->
       <div class="flex gap-4">
         <div class="flex flex-col items-center">
-          <div class="w-12 h-12 rounded-full <?= $s['status'] !== 'registered' ? 'bg-yellow-100 text-yellow-600' : 'bg-gray-200 text-gray-400' ?> flex items-center justify-center text-xl font-bold">
+          <div class="w-12 h-12 rounded-full <?= $s['status'] !== 'registered' ? 'bg-amber-100 text-amber-600' : 'bg-gray-200 text-gray-400' ?> flex items-center justify-center text-xl font-bold">
             ✓
           </div>
           <?php if ($s['status'] !== 'registered'): ?>
-            <div class="w-1 h-16 bg-yellow-200 my-2"></div>
+            <div class="w-1 h-16 bg-amber-200 my-2"></div>
           <?php endif; ?>
         </div>
         <div class="pt-2">
-          <h4 class="font-semibold <?= $s['status'] !== 'registered' ? 'text-yellow-900' : 'text-gray-500' ?>">
+          <h4 class="font-semibold <?= $s['status'] !== 'registered' ? 'text-amber-900' : 'text-gray-500' ?>">
             Arrivé
           </h4>
           <?php if ($s['status'] !== 'registered'): ?>
@@ -66,12 +66,12 @@
       <!-- Retrait -->
       <div class="flex gap-4">
         <div class="flex flex-col items-center">
-          <div class="w-12 h-12 rounded-full <?= $s['status'] === 'picked_up' ? 'bg-green-100 text-green-600' : 'bg-gray-200 text-gray-400' ?> flex items-center justify-center text-xl font-bold">
+          <div class="w-12 h-12 rounded-full <?= $s['status'] === 'picked_up' ? 'bg-emerald-100 text-emerald-600' : 'bg-gray-200 text-gray-400' ?> flex items-center justify-center text-xl font-bold">
             ✓
           </div>
         </div>
         <div class="pt-2">
-          <h4 class="font-semibold <?= $s['status'] === 'picked_up' ? 'text-green-900' : 'text-gray-500' ?>">
+          <h4 class="font-semibold <?= $s['status'] === 'picked_up' ? 'text-emerald-900' : 'text-gray-500' ?>">
             Retiré
           </h4>
           <?php if ($s['status'] === 'picked_up'): ?>

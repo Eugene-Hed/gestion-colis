@@ -87,7 +87,7 @@
       }
       
       .card {
-        @apply bg-white rounded-xl shadow-md hover:shadow-lg transition duration-200 overflow-hidden;
+        @apply bg-white rounded-2xl shadow-sm hover:shadow-lg transition duration-300 overflow-hidden border border-slate-100;
       }
       
       .input-field {

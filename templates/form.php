@@ -5,8 +5,8 @@
     <form method="POST" action="?route=create" class="space-y-6" id="shipmentForm">
       
       <!-- Section Expéditeur -->
-      <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
-        <h3 class="text-lg font-semibold text-blue-900 mb-4">👤 Informations de l'expéditeur</h3>
+      <div class="bg-slate-50 p-6 rounded-lg border border-slate-300">
+        <h3 class="text-lg font-semibold text-slate-900 mb-4">👤 Informations de l'expéditeur</h3>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -39,8 +39,8 @@
       </div>
       
       <!-- Section Destinataire -->
-      <div class="bg-green-50 p-6 rounded-lg border border-green-200">
-        <h3 class="text-lg font-semibold text-green-900 mb-4">🎁 Informations du destinataire</h3>
+      <div class="bg-emerald-50 p-6 rounded-lg border border-emerald-300">
+        <h3 class="text-lg font-semibold text-emerald-900 mb-4">🎁 Informations du destinataire</h3>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -73,8 +73,8 @@
       </div>
       
       <!-- Section Colis -->
-      <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
-        <h3 class="text-lg font-semibold text-purple-900 mb-4">📋 Détails du colis</h3>
+      <div class="bg-slate-50 p-6 rounded-lg border border-slate-300">
+        <h3 class="text-lg font-semibold text-slate-900 mb-4">📋 Détails du colis</h3>
         
         <div>
           <label for="description" class="block text-sm font-medium text-gray-700 mb-2">

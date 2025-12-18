@@ -2,11 +2,11 @@
   
   <!-- Hero Section -->
   <div class="mb-12">
-    <div class="card p-12 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+    <div class="card p-12 bg-gradient-to-r from-slate-700 to-slate-600 text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
       <div class="relative z-10">
-        <h1 class="text-5xl font-bold mb-2">📊 Tableau de Bord</h1>
-        <p class="text-xl text-white/80">Bienvenue dans le centre de contrôle de votre plateforme</p>
+        <h1 class="text-4xl lg:text-5xl font-bold mb-2">📊 Tableau de Bord</h1>
+        <p class="text-lg text-white/80">Bienvenue dans le centre de contrôle de votre plateforme</p>
         <p class="text-sm text-white/60 mt-2">Mise à jour en temps réel</p>
       </div>
     </div>
@@ -51,13 +51,13 @@
       ];
       foreach($stats as $stat):
     ?>
-    <div class="card p-6 <?= $stat['bgColor'] ?> border-2 border-<?= $stat['color'] ?>-200">
-      <div class="flex items-center justify-between">
+    <div class="card p-8 bg-white hover:shadow-xl transition-all duration-300">
+      <div class="flex items-start justify-between">
         <div>
-          <p class="text-gray-600 text-sm font-medium"><?= $stat['label'] ?></p>
-          <p class="text-4xl font-bold <?= $stat['textColor'] ?> mt-2"><?= $stat['value'] ?></p>
+          <p class="text-slate-600 text-sm font-semibold uppercase tracking-wider"><?= $stat['label'] ?></p>
+          <p class="text-5xl font-bold <?= $stat['textColor'] ?> mt-4 leading-tight"><?= $stat['value'] ?></p>
         </div>
-        <span class="text-5xl opacity-50"><?= $stat['icon'] ?></span>
+        <span class="text-6xl opacity-40"><?= $stat['icon'] ?></span>
       </div>
     </div>
     <?php endforeach; ?>
@@ -71,28 +71,28 @@
       $avgValue = count($shipments) > 0 ? $totalValue / count($shipments) : 0;
     ?>
     
-    <div class="card p-6 bg-gradient-to-br from-emerald-500 to-teal-600 text-white">
-      <p class="text-white/80 text-sm font-medium">Valeur totale</p>
-      <p class="text-4xl font-bold mt-2"><?= number_format($totalValue, 0, ',', ' ') ?></p>
-      <p class="text-sm text-white/60 mt-1">₣ FCFA</p>
-      <div class="mt-4 pt-4 border-t border-white/20">
-        <p class="text-xs text-white/70">Somme de tous les colis</p>
+    <div class="card p-8 bg-gradient-to-br from-slate-700 to-slate-800 text-white hover:shadow-xl transition-all duration-300">
+      <p class="text-white/70 text-sm font-semibold uppercase tracking-wider">Valeur totale</p>
+      <p class="text-5xl font-bold mt-4"><?= number_format($totalValue, 0, ',', ' ') ?></p>
+      <p class="text-sm text-white/60 mt-2">₣ FCFA</p>
+      <div class="mt-6 pt-6 border-t border-white/10">
+        <p class="text-xs text-white/60">Somme de tous les colis</p>
       </div>
     </div>
 
-    <div class="card p-6 bg-gradient-to-br from-blue-500 to-cyan-600 text-white">
-      <p class="text-white/80 text-sm font-medium">Revenus générés</p>
-      <p class="text-4xl font-bold mt-2"><?= number_format($totalRevenue, 0, ',', ' ') ?></p>
-      <p class="text-sm text-white/60 mt-1">₣ FCFA (10%)</p>
-      <div class="mt-4 pt-4 border-t border-white/20">
-        <p class="text-xs text-white/70">Commission sur transport</p>
+    <div class="card p-8 bg-gradient-to-br from-emerald-700 to-emerald-800 text-white hover:shadow-xl transition-all duration-300">
+      <p class="text-white/70 text-sm font-semibold uppercase tracking-wider">Revenus générés</p>
+      <p class="text-5xl font-bold mt-4"><?= number_format($totalRevenue, 0, ',', ' ') ?></p>
+      <p class="text-sm text-white/60 mt-2">₣ FCFA (10%)</p>
+      <div class="mt-6 pt-6 border-t border-white/10">
+        <p class="text-xs text-white/60">Commission sur transport</p>
       </div>
     </div>
 
-    <div class="card p-6 bg-gradient-to-br from-purple-500 to-pink-600 text-white">
-      <p class="text-white/80 text-sm font-medium">Valeur moyenne</p>
-      <p class="text-4xl font-bold mt-2"><?= number_format($avgValue, 0, ',', ' ') ?></p>
-      <p class="text-sm text-white/60 mt-1">₣ FCFA / colis</p>
+    <div class="card p-8 bg-gradient-to-br from-slate-700 to-slate-800 text-white hover:shadow-xl transition-all duration-300">
+      <p class="text-white/70 text-sm font-semibold uppercase tracking-wider">Valeur moyenne</p>
+      <p class="text-5xl font-bold mt-4"><?= number_format($avgValue, 0, ',', ' ') ?></p>
+      <p class="text-sm text-white/60 mt-2">₣ FCFA / colis</p>
       <div class="mt-4 pt-4 border-t border-white/20">
         <p class="text-xs text-white/70">Moyenne par expédition</p>
       </div>

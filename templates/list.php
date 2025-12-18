@@ -53,11 +53,11 @@
 
   <!-- Revenus -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-    <div class="card p-6 gradient-bg text-white">
+    <div class="card p-6 bg-gradient-to-br from-slate-600 to-slate-700 text-white">
       <p class="text-white/80 text-sm font-medium">Valeur totale des colis</p>
       <p class="text-4xl font-bold"><?= number_format($totalValue, 0, ',', ' ') ?> FCFA</p>
     </div>
-    <div class="card p-6 bg-gradient-to-br from-green-500 to-emerald-600 text-white">
+    <div class="card p-6 bg-gradient-to-br from-emerald-700 to-emerald-800 text-white">
       <p class="text-white/80 text-sm font-medium">Revenus générés (10%)</p>
       <p class="text-4xl font-bold"><?= number_format($totalRevenue, 0, ',', ' ') ?> FCFA</p>
     </div>

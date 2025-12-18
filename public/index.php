@@ -33,6 +33,7 @@ $route = $_GET['route'] ?? $_POST['route'] ?? 'home';
 
 function render($template, $vars = []) {
     extract($vars);
+    $template = $template; // Make sure $template is available in layout.php
     include __DIR__ . '/../templates/layout.php';
 }
 
